@@ -94,19 +94,19 @@
 <section id="clone-with-git">
 <h2>Clone with GIT<a class="headerlink" href="#clone-with-git" title="Permalink to this heading"></a></h2>
 <ul class="simple">
-<li><p>Create a working folder <strong>my_library</strong></p></li>
-<li><p>Open <strong>cmd</strong> and change to the created folder with <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/my_library</span></code></p></li>
+<li><p>Create a working folder <strong>&lt;my_library&gt;</strong></p></li>
+<li><p>Open <strong>cmd</strong> and change to the created folder with <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/&lt;my_library&gt;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/user/repository_name.git</span></code></p></li>
 </ul>
 </section>
 <section id="locally-install-a-library">
 <h2>Locally install a library<a class="headerlink" href="#locally-install-a-library" title="Permalink to this heading"></a></h2>
 <ul class="simple">
-<li><p>Download the desired library into a folder <cite>/path/my_library</cite></p></li>
-<li><p>On <strong>cmd</strong> and change to the fodler with <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/my_library</span></code></p></li>
+<li><p>Download the desired library into a folder <cite>/path/&lt;my_library&gt;</cite></p></li>
+<li><p>On <strong>cmd</strong> and change to the fodler with <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/&lt;my_library&gt;</span></code></p></li>
 <li><dl class="simple">
-<dt>For <cite>pip</cite>:</dt><dd><ul>
-<li><p>First uninstall if installed with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">uninstall</span> <span class="pre">my_library</span></code></p></li>
+<dt>For <strong>pip</strong>:</dt><dd><ul>
+<li><p>First uninstall if installed with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">uninstall</span> <span class="pre">&lt;my_library&gt;</span></code></p></li>
 <li><p>Install with <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></code></p></li>
 </ul>
 </dd>
@@ -114,7 +114,7 @@
 </li>
 <li><dl class="simple">
 <dt>For <strong>conda</strong>:</dt><dd><ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">my_library</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">&lt;my_library&gt;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">/path/library-filenmae.tar.bz2</span></code></p></li>
 </ul>
 </dd>
@@ -130,7 +130,7 @@
 <li><dl class="simple">
 <dt>On Anaconda Prompt:</dt><dd><ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">demo</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">skeleton</span> <span class="pre">pypi</span> <span class="pre">&lt;package&gt;</span></code> (first download this on any directory)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">skeleton</span> <span class="pre">pypi</span> <span class="pre">&lt;my_library&gt;</span></code> (first download this on any directory)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">conda-build</span></code> (only if not installed)</p></li>
 </ul>
 </dd>
@@ -147,9 +147,9 @@
 <li><p>On Anaconda Prompt, cd to library folder</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">conda-build</span></code> (if not installed)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">demo</span></code> (if needed)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">skeleton</span> <span class="pre">pypi</span> <span class="pre">my_package</span></code> &lt;different directory&gt;</p></li>
-<li><p>If conda skeleton doesn’t work, use <code class="docutils literal notranslate"><span class="pre">grayskull</span> <span class="pre">pypi</span> <span class="pre">&lt;library</span> <span class="pre">name&gt;</span></code> (retrieves from pipy too), cd to a different folder first</p></li>
-<li><p>Fork the <cite>my_package-feedstock</cite> to your PC/profile (if not forked)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">skeleton</span> <span class="pre">pypi</span> <span class="pre">&lt;my_library&gt;</span></code> &lt;different directory&gt;</p></li>
+<li><p>If conda skeleton doesn’t work, use <code class="docutils literal notranslate"><span class="pre">grayskull</span> <span class="pre">pypi</span> <span class="pre">&lt;my_library&gt;</span></code> (retrieves from pipy too), cd to a different folder first</p></li>
+<li><p>Fork the <cite>&lt;my_library&gt;-feedstock</cite> to your PC/profile (if not forked)</p></li>
 <li><p>Update the personal repo or do a “git pull”. Normally if you try to “push” first you’ll get an error…</p></li>
 <li><p>Change the <cite>sha256</cite> and <cite>version</cite> on the <cite>meta.yaml</cite> file on <cite>recipe</cite> folder with the one created (downloaded). This should be within the first 10 lines.</p></li>
 <li><p>Change the <cite>version</cite> to the new one, and reset <cite>build number</cite> to <cite>0</cite></p></li>
@@ -164,7 +164,7 @@
 <section id="pip-update">
 <h2>Pip Update<a class="headerlink" href="#pip-update" title="Permalink to this heading"></a></h2>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">&lt;package&gt;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">&lt;my_library&gt;</span></code></p></li>
 </ul>
 </section>
 <section id="reformat-to-pep8">
@@ -190,47 +190,50 @@
 <h2>Upload to PyPi<a class="headerlink" href="#upload-to-pypi" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>On <strong>cmd</strong> as Administrator</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/library_folder</span></code></p></li>
-<li><p><a href="#id1"><span class="problematic" id="id2">``</span></a>pip install –r requirements_dev.txt` (only first time or if changed)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/&lt;my_library&gt;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">–r</span> <span class="pre">requirements_dev.txt</span></code> (only first time or if changed)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">sdist</span></code></p></li>
-<li><p>Github -&gt; Releases -&gt; New Realse -&gt; tag and name vx.x.x, some description, and publish release (don’t upload the zip).</p></li>
+<li><p>Go to Github &gt; Releases &gt; New Releases  and add a <strong>tag</strong> and <strong>Release title</strong> as <strong>vx.x.x</strong>, some description, and publish release (don’t upload the zip).</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">twine</span> <span class="pre">upload</span> <span class="pre">.\dist\&lt;package-x.x.x.tar.gz&gt;</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">twine</span> <span class="pre">upload</span> <span class="pre">-u</span> <span class="pre">GrauJack</span> <span class="pre">-p</span> <span class="pre">afw89=</span> <span class="pre">-</span> <span class="pre">repository-url</span> <span class="pre">https://pypi.org/manage/project/spectrapepper/</span> <span class="pre">dist/spectrapepper-0.0.10.tar.gz</span></code></p></li>
-<li><p>Enter PyPi user and pass</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">twine</span> <span class="pre">upload</span> <span class="pre">-u</span> <span class="pre">&lt;username&gt;</span> <span class="pre">-p</span> <span class="pre">&lt;password&gt;</span> <span class="pre">-</span> <span class="pre">repository-url</span> <span class="pre">https://pypi.org/manage/user/dist/&lt;my_library&gt;-0.0.10.tar.gz</span></code></p></li>
+<li><p>Enter <strong>PyPi</strong> user and pass</p></li>
 </ul>
 </section>
 <section id="bump-version">
 <h2>Bump version<a class="headerlink" href="#bump-version" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>On <strong>cmd</strong> as Administrator</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/current_folder</span></code></p></li>
-<li><p>bumpversion patch/minor/mayor (select one)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/&lt;my_library&gt;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bumpversion</span> <span class="pre">patch/minor/mayor</span></code> (select one)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">*</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">“commit</span> <span class="pre">note”</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">main</span></code> (or master)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">--tags</span></code></p></li>
-<li><p>If this does not work, you can change the version manually in the files <cite>setup.py</cite>, <cite>setup.cfg</cite>, and <cite>__init__.py</cite> files.</p></li>
+<li><p>If this does not work, you can change the version manually in the files <strong>setup.py</strong>, <strong>setup.cfg</strong>, and <strong>__init__.py</strong> files.</p></li>
 </ul>
 </section>
 <section id="sphinx-docs">
 <h2>Sphinx docs<a class="headerlink" href="#sphinx-docs" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>On <strong>cmd</strong> as Administrator</p></li>
-<li><p>Install Sphinx with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx</span></code></p></li>
-<li><p>Create a folder called <cite>sphinx</cite></p></li>
-<li><p>Change work directory to the folder <cite>sphinx</cite> with <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/sphinx</span></code></p></li>
+<li><p>Install <strong>Sphinx</strong> with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx</span></code></p></li>
+<li><p>Create a folder called <strong>sphinx</strong></p></li>
+<li><p>Change work directory to the folder <strong>sphinx</strong> with <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/&lt;my_library&gt;/sphinx</span></code></p></li>
 <li><p>Download the template with the command <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code> and follow the installation instructions. Set it up as you need, if in doubt go with the defaults.</p></li>
-<li><p>Change and add <cite>.rst</cite> files as you need</p></li>
+<li><p>Change and add <strong>.rst</strong> files as you need</p></li>
 <li><p>Before creating the HTML files, always do <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">clean</span></code></p></li>
 <li><p>Create the new HTML files with <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">html</span></code></p></li>
-<li><p>Create a directory called <cite>/path/docs</cite></p></li>
-<li><p>Copy files under <cite>/path/sphinx/_build/html</cite> to the <cite>/path/docs</cite> directory, replace all but don’t delete any files. <cite>.nojekkyll</cite> is essential and not made by <cite>sphinx</cite>.</p></li>
+<li><p>Create a directory called <strong>/path/&lt;my_library&gt;/docs</strong></p></li>
+<li><p>Copy files under <strong>/path/&lt;my_library&gt;/sphinx/_build/html</strong> to the <strong>/path/&lt;my_library&gt;/docs</strong> directory, replace all but don’t delete any files.</p></li>
+<li><p>Update the repository with <strong>git</strong></p></li>
+<li><p>In <strong>GitHub</strong> got to  <strong>Settings &gt; Pages</strong> and Under <strong>Branch</strong> select the <strong>docs</strong> folder where the <strong>html</strong> where pushed to.</p></li>
+<li><p>If the html files do not render well, add and empty <strong>.nojekkyll</strong> file in the <strong>docs</strong> folder.</p></li>
 </ul>
 </section>
 <section id="ignore-already-commited-files">
 <h2>Ignore already commited files<a class="headerlink" href="#ignore-already-commited-files" title="Permalink to this heading"></a></h2>
 <ul class="simple">
-<li><p>Update <cite>.gitignore</cite> if needed</p></li>
+<li><p>Update <strong>.gitignore</strong> if needed</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rm</span> <span class="pre">-r</span> <span class="pre">--cached</span> <span class="pre">.</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">–m</span> <span class="pre">“commit</span> <span class="pre">comment”</span></code></p></li>
@@ -240,7 +243,6 @@
 <section id="coverage">
 <h2>Coverage<a class="headerlink" href="#coverage" title="Permalink to this heading"></a></h2>
 <ul class="simple">
-<li><p>Remember first to change the imports (import my_functions…)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">coverage</span></code> (if not installed)</p></li>
 <li><p>change directory (cd) to the corresponding folder where the tests are</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">–m</span> <span class="pre">unittest</span> <span class="pre">test_package.py</span></code> (just run the py file)</p></li>
@@ -254,8 +256,8 @@
 <section id="count-lines-with-cloc">
 <h2>Count lines with cloc<a class="headerlink" href="#count-lines-with-cloc" title="Permalink to this heading"></a></h2>
 <ul class="simple">
-<li><p>Download <cite>cloc</cite> from its Github repository</p></li>
-<li><p>On <strong>cmd</strong>, cd to the location of the cloc executable</p></li>
+<li><p>Download <strong>cloc</strong> from its Github repository</p></li>
+<li><p>On <strong>cmd</strong>, cd to the location of the <strong>cloc</strong> executable</p></li>
 <li><p>To count lines, write the name of the .exe and then the location/name of the dir/file</p></li>
 <li><p>Example: <code class="docutils literal notranslate"><span class="pre">cloc-1.96.1.exe</span> <span class="pre">my_file.py</span></code></p></li>
 </ul>

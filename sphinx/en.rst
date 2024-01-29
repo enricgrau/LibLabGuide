@@ -4,20 +4,20 @@ English v0.0.1
 
 Clone with GIT
 --------------
-* Create a working folder **my_library**
-* Open **cmd** and change to the created folder with ``cd /path/my_library``
+* Create a working folder **<my_library>**
+* Open **cmd** and change to the created folder with ``cd /path/<my_library>``
 * ``git clone https://github.com/user/repository_name.git``
 
 
 Locally install a library
 -------------------------
-* Download the desired library into a folder `/path/my_library`
-* On **cmd** and change to the fodler with ``cd /path/my_library``
+* Download the desired library into a folder `/path/<my_library>`
+* On **cmd** and change to the fodler with ``cd /path/<my_library>``
 * For **pip**:
-    * First uninstall if installed with ``pip uninstall my_library``
+    * First uninstall if installed with ``pip uninstall <my_library>``
     * Install with ``python setup.py install``
 * For **conda**:
-    * ``conda remove my_library``
+    * ``conda remove <my_library>``
     * ``conda install /path/library-filenmae.tar.bz2``
 
 
@@ -28,7 +28,7 @@ Publish to conda-forge
 * Clone it to your PC with ``git clone https://github.com/user/repository_name.git``
 * On Anaconda Prompt:
     * ``conda activate demo``
-    * ``conda skeleton pypi <package>`` (first download this on any directory)
+    * ``conda skeleton pypi <my_library>`` (first download this on any directory)
     * ``conda install conda-build`` (only if not installed)
 
 * Modify the `meta` file accordingly in the folder `recipies` in `stage-recipie`
@@ -41,9 +41,9 @@ Update conda-forge
 * On Anaconda Prompt, cd to library folder
 * ``conda install conda-build`` (if not installed)
 * ``conda activate demo`` (if needed)
-* ``conda skeleton pypi my_package`` <different directory> 
-* If conda skeleton doesn’t work, use ``grayskull pypi <library name>`` (retrieves from pipy too), cd to a different folder first
-* Fork the `my_package-feedstock` to your PC/profile (if not forked)
+* ``conda skeleton pypi <my_library>`` <different directory> 
+* If conda skeleton doesn’t work, use ``grayskull pypi <my_library>`` (retrieves from pipy too), cd to a different folder first
+* Fork the `<my_library>-feedstock` to your PC/profile (if not forked)
 * Update the personal repo or do a “git pull”. Normally if you try to “push” first you’ll get an error… 
 * Change the `sha256` and `version` on the `meta.yaml` file on `recipe` folder with the one created (downloaded). This should be within the first 10 lines.
 * Change the `version` to the new one, and reset `build number` to `0`
@@ -58,7 +58,7 @@ Update conda-forge
 Pip Update
 ----------
 
-* ``pip install --upgrade <package>``
+* ``pip install --upgrade <my_library>``
 
 
 Reformat to PEP8
@@ -84,47 +84,50 @@ Upload to PyPi
 --------------
 
 * On **cmd** as Administrator
-* ``cd /path/library_folder``
-* ``pip install –r requirements_dev.txt` (only first time or if changed)
+* ``cd /path/<my_library>``
+* ``pip install –r requirements_dev.txt`` (only first time or if changed)
 * ``python setup.py sdist``
-* Github -> Releases -> New Realse -> tag and name vx.x.x, some description, and publish release (don’t upload the zip).
+* Go to Github > Releases > New Releases  and add a **tag** and **Release title** as **vx.x.x**, some description, and publish release (don’t upload the zip).
 * ``twine upload .\dist\<package-x.x.x.tar.gz>``
-* ``twine upload -u GrauJack -p afw89= - repository-url https://pypi.org/manage/project/spectrapepper/ dist/spectrapepper-0.0.10.tar.gz``
-* Enter PyPi user and pass
+* ``twine upload -u <username> -p <password> - repository-url https://pypi.org/manage/user/dist/<my_library>-0.0.10.tar.gz``
+* Enter **PyPi** user and pass
 
 
 Bump version
 ------------
 
 * On **cmd** as Administrator
-* ``cd /path/current_folder``
-* bumpversion patch/minor/mayor (select one)
+* ``cd /path/<my_library>``
+* ``bumpversion patch/minor/mayor`` (select one)
 * ``git add *``
 * ``git commit -m “commit note”``
 * ``git push origin main`` (or master)
 * ``git push --tags``
-* If this does not work, you can change the version manually in the files `setup.py`, `setup.cfg`, and `__init__.py` files.
+* If this does not work, you can change the version manually in the files **setup.py**, **setup.cfg**, and **__init__.py** files.
 
 
 Sphinx docs
 -----------
 
 * On **cmd** as Administrator
-* Install Sphinx with ``pip install sphinx``
-* Create a folder called `sphinx`
-* Change work directory to the folder `sphinx` with ``cd /path/sphinx``
+* Install **Sphinx** with ``pip install sphinx``
+* Create a folder called **sphinx**
+* Change work directory to the folder **sphinx** with ``cd /path/<my_library>/sphinx``
 * Download the template with the command ``sphinx-quickstart`` and follow the installation instructions. Set it up as you need, if in doubt go with the defaults.
-* Change and add `.rst` files as you need
+* Change and add **.rst** files as you need
 * Before creating the HTML files, always do ``Make clean``
 * Create the new HTML files with ``Make html``
-* Create a directory called `/path/docs`
-* Copy files under `/path/sphinx/_build/html` to the `/path/docs` directory, replace all but don’t delete any files. `.nojekkyll` is essential and not made by `sphinx`.
+* Create a directory called **/path/<my_library>/docs**
+* Copy files under **/path/<my_library>/sphinx/_build/html** to the **/path/<my_library>/docs** directory, replace all but don’t delete any files. 
+* Update the repository with **git** 
+* In **GitHub** got to  **Settings > Pages** and Under **Branch** select the **docs** folder where the **html** where pushed to.
+* If the html files do not render well, add and empty **.nojekkyll** file in the **docs** folder.
 
 
 Ignore already commited files
 -----------------------------
 
-* Update `.gitignore` if needed
+* Update **.gitignore** if needed
 * ``git rm -r --cached .``
 * ``git add .``
 * ``git commit –m “commit comment”``
@@ -134,7 +137,6 @@ Ignore already commited files
 Coverage
 --------
 
-* Remember first to change the imports (import my_functions…)
 * ``pip install coverage`` (if not installed)
 * change directory (cd) to the corresponding folder where the tests are
 * ``python –m unittest test_package.py`` (just run the py file)
@@ -148,7 +150,7 @@ Coverage
 Count lines with cloc
 ---------------------
 
-* Download `cloc` from its Github repository
-* On **cmd**, cd to the location of the cloc executable
+* Download **cloc** from its Github repository
+* On **cmd**, cd to the location of the **cloc** executable
 * To count lines, write the name of the .exe and then the location/name of the dir/file
 * Example: ``cloc-1.96.1.exe my_file.py``
