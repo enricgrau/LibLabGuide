@@ -1,6 +1,8 @@
 # Library Laboratory Guide
 
-Over the years, while developing Python libraries with Git and GitHub, I've often needed to carry out various procedures. Some of these tasks are rare, perhaps done only once in the lifetime of a library, like publishing to PyPI or Conda-forge. Because of this, remembering these infrequent steps can be challenging. To address this, I've been gathering all these procedures and compiling them into one central document for quick reference. I've found this collection immensely helpful, and it struck me that it might be beneficial to others as well. So, I'm sharing it here for anyone who might find it useful. And es, this si essentially a cheat sheet.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10600680.svg)](https://doi.org/10.5281/zenodo.10600680)
+
+Over the years, while developing Python libraries with Git and GitHub, I've often needed to carry out various procedures. Some of these tasks are rare, perhaps done only once in the lifetime of a library, like publishing to PyPI or Conda-forge. Because of this, remembering these infrequent steps can be challenging. To address this, I've been gathering all these procedures and compiling them into one central document for quick reference. I've found this collection immensely helpful, and it struck me that it might be beneficial to others as well. So, I'm sharing it here for anyone who might find it useful. And es, this is essentially a cheat sheet.
 
 Access the documentation here: https://enricgrau.github.io/LibLabGuide/
 
@@ -53,7 +55,7 @@ Finally, I kindly ask that if you find this list useful, consider citing or refe
         year = {2024},
         publisher = {GitHub},
         journal = {GitHub repository},
-        doi = {}
+        doi = {https://doi.org/10.5281/zenodo.10600680}
         url = {https://github.com/enricgrau/LibLabGuide},
         }
 
