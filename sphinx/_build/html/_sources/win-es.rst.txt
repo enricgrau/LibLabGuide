@@ -1,5 +1,5 @@
 ==============
-Español v0.0.1
+Español v0.1.0
 ==============
 
 Crear y activar un entorno virtual

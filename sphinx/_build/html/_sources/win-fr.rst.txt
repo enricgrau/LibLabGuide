@@ -1,5 +1,5 @@
 ===============
-Français v0.0.1
+Français v0.1.0
 ===============
 
 Créer et activer un environnement virtuel

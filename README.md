@@ -16,11 +16,11 @@ You may download the corresponding HTML file for your preferred OS and language,
 # Available guides
 
 - Windows
-    - Català (ca) [v0.0.1]
-    - English (en) [v0.0.1]
-    - Español (es) [v0.0.1]
-    - Français (fr) [v0.0.1]
-    - Italiano (it) [v0.0.1]
+    - Català (ca) [v0.1.0]
+    - English (en) [v0.1.0]
+    - Español (es) [v0.1.0]
+    - Français (fr) [v0.1.0]
+    - Italiano (it) [v0.1.0]
 
  
 
@@ -49,7 +49,7 @@ Finally, I kindly ask that if you find this list useful, consider citing or refe
 
         @misc{Grau-Luque2024LLG,
         author = {E. Grau-Luque},
-        title = {{LibLabGuide: A list of useful commands and procdeures for developing Github repositories and Python libraries}},
+        title = {{LibLabGuide: A list of useful commands and procedures for developing Github repositories and Python libraries}},
         year = {2024},
         publisher = {GitHub},
         journal = {GitHub repository},
@@ -61,6 +61,7 @@ If you cannot make a reference otr citation, please consider contributing. Every
 
 
 # Versioning
+
 Versions have three values: vA.B.C, representing Major (A), Significant (B), and Minor (C) changes.
 
 - Minor: corrections in grammar.
@@ -73,6 +74,7 @@ Every Significant and Major change must eventually be translated into each langu
 
 Major changes are global and mean the same across all OSs and languages.
 
+The repository version will follow the minimum value on each of the indices across all OSs and languages. For example, if the ``win-en`` is in ``v1.1.5``, and ``mac-es`` is in ``v0.1.6``, then the repository's version be set at ``v0.1.5``.
 
 # Disclaimer
 

@@ -1,5 +1,5 @@
 ===============
-Italiano v0.0.1
+Italiano v0.1.0
 ===============
 
 Crea e attiva un ambiente virtuale

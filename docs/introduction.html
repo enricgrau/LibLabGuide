@@ -48,19 +48,20 @@
 <li class="toctree-l2"><a class="reference internal" href="#how-to-use">How to use</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#available-guides">Available guides</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#list-of-procedures-and-commands">List of procedures and commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#disclaimer">Disclaimer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#credits">Credits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versioning">Versioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#disclaimer">Disclaimer</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contribution.html">How to contribute</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Windows:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="win-ca.html">Català v0.0.1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="win-en.html">English v0.0.1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="win-es.html">Español v0.0.1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="win-fr.html">Français v0.0.1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="win-it.html">Italiano v0.0.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="win-ca.html">Català v0.1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="win-en.html">English v0.1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="win-es.html">Español v0.1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="win-fr.html">Français v0.1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="win-it.html">Italiano v0.1.0</a></li>
 </ul>
 
         </div>
@@ -89,7 +90,8 @@
              
   <section id="library-laboratory-guide">
 <h1>Library Laboratory Guide<a class="headerlink" href="#library-laboratory-guide" title="Permalink to this heading"></a></h1>
-<p>Over the years, while developing Python libraries with Git and GitHub, I’ve often needed to carry out various procedures. Some of these tasks are rare, perhaps done only once in the lifetime of a library, like publishing to PyPI or Conda-forge. Because of this, remembering these infrequent steps can be challenging. To address this, I’ve been gathering all these procedures, compiling them into one central document for quick reference. I’ve found this collection immensely helpful, and it struck me that it might be beneficial to others as well. So, I’m sharing it here for anyone who might find it useful</p>
+<p>Over the years, while developing Python libraries with Git and GitHub, I’ve often needed to carry out various procedures. Some of these tasks are rare, perhaps done only once in the lifetime of a library, like publishing to PyPI or Conda-forge. Because of this, remembering these infrequent steps can be challenging. To address this, I’ve been gathering all these procedures and compiling them into one central document for quick reference. I’ve found this collection immensely helpful, and it struck me that it might be beneficial to others as well. So, I’m sharing it here for anyone who might find it useful. And es, this si essentially a cheat sheet.</p>
+<p>Access the documentation here: <a class="reference external" href="https://enricgrau.github.io/LibLabGuide/">https://enricgrau.github.io/LibLabGuide/</a></p>
 <section id="how-to-use">
 <h2>How to use<a class="headerlink" href="#how-to-use" title="Permalink to this heading"></a></h2>
 <p>The guide is organized by Operating System (OS) and language. Each OS has its own folder, within which you’ll find documents for different languages. These documents are in HyperText Markup Language (HTML) format, created using a Sphinx template. This makes them easily accessible through any preferred web browser. You can quickly find what you need using the search function or the index navigation.</p>
@@ -100,7 +102,11 @@
 <ul class="simple">
 <li><dl class="simple">
 <dt>Windows</dt><dd><ul>
-<li><p>English (en) [v0.0.1]</p></li>
+<li><p>Català (ca) [v0.1.0]</p></li>
+<li><p>English (en) [v0.1.0]</p></li>
+<li><p>Español (es) [v0.1.0]</p></li>
+<li><p>Français (fr) [v0.1.0]</p></li>
+<li><p>Italiano (it) [v0.1.0]</p></li>
 </ul>
 </dd>
 </dl>
@@ -110,6 +116,7 @@
 <section id="list-of-procedures-and-commands">
 <h2>List of procedures and commands<a class="headerlink" href="#list-of-procedures-and-commands" title="Permalink to this heading"></a></h2>
 <ul class="simple">
+<li><p>Crerate and activate virtual environment</p></li>
 <li><p>Update libraries with <cite>pip</cite></p></li>
 <li><p>Clone repository with <cite>git</cite></p></li>
 <li><p>Update GitHub repositiry</p></li>
@@ -126,21 +133,13 @@
 <li><p>Reformat to <code class="docutils literal notranslate"><span class="pre">PEP8</span></code></p></li>
 </ul>
 </section>
-<section id="disclaimer">
-<h2>Disclaimer<a class="headerlink" href="#disclaimer" title="Permalink to this heading"></a></h2>
-<ul class="simple">
-<li><p>I’m dedicated to regularly updating and enhancing this list. If you’re interested in contributing, I would be delighted to have your support!</p></li>
-<li><p>Please use these procedures cautiously. While I try to keep them up to date, changes in technology can sometimes outpace my updates.</p></li>
-<li><p>I cannot be held accountable for any issues or inconveniences that might arise from following these instructions.</p></li>
-</ul>
-</section>
 <section id="credits">
 <h2>Credits<a class="headerlink" href="#credits" title="Permalink to this heading"></a></h2>
 <p>Finally, I kindly ask that if you find this list useful, consider citing or reference it as:</p>
 <blockquote>
 <div><p>&#64;misc{Grau-Luque2024LLG,
 author = {E. Grau-Luque},
-title = {{LibLabGuide: A list of useful commands and procdeures for developing Github repositories and Python libraries}},
+title = {{LibLabGuide: A list of useful commands and procedures for developing Github repositories and Python libraries}},
 year = {2024},
 publisher = {GitHub},
 journal = {GitHub repository},
@@ -149,6 +148,27 @@ url = {<a class="reference external" href="https://github.com/enricgrau/LibLabGu
 }</p>
 </div></blockquote>
 <p>If you cannot make a reference otr citation, please consider contributing. Everything helps!</p>
+</section>
+<section id="versioning">
+<h2>Versioning<a class="headerlink" href="#versioning" title="Permalink to this heading"></a></h2>
+<p>Versions have three values: vA.B.C, representing Major (A), Significant (B), and Minor (C) changes.</p>
+<ul class="simple">
+<li><p>Minor: corrections in grammar.</p></li>
+<li><p>Significant: small modifications in steps and instructions.</p></li>
+<li><p>Major: adding or removing entire procedures.</p></li>
+</ul>
+<p>Each subset of instructions (each language for each OS) may have an independent Minor version value. These modifications may be exclusive to each language and do not necessarily affect others. Thus, the same minor indices may not reflect the same changes or improvements between languages.</p>
+<p>Every Significant and Major change must eventually be translated into each language. The same significant indices indicate the same changes and improvements across languages, but not necessarily across OS.</p>
+<p>Major changes are global and mean the same across all OSs and languages.</p>
+<p>The repository version will follow the minimum value on each of the indices across all OSs and languages. For example, if the <code class="docutils literal notranslate"><span class="pre">win-en</span></code> is in <code class="docutils literal notranslate"><span class="pre">v1.1.5</span></code>, and <code class="docutils literal notranslate"><span class="pre">mac-es</span></code> is in <code class="docutils literal notranslate"><span class="pre">v0.1.6</span></code>, then the repository’s version be set at <code class="docutils literal notranslate"><span class="pre">v0.1.5</span></code>.</p>
+</section>
+<section id="disclaimer">
+<h2>Disclaimer<a class="headerlink" href="#disclaimer" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>I’m dedicated to regularly updating and enhancing this list. If you’re interested in contributing, I would be delighted to have your support!</p></li>
+<li><p>Please use these procedures cautiously. While I try to keep them up to date, changes in technology can sometimes outpace my updates.</p></li>
+<li><p>I cannot be held accountable for any issues or inconveniences that might arise from following these instructions.</p></li>
+</ul>
 </section>
 </section>
 

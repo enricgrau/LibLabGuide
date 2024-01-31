@@ -1,5 +1,5 @@
 =============
-Català v0.0.1
+Català v0.1.0
 =============
 
 Crea i activa un entorn virtual
