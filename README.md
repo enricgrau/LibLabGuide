@@ -16,8 +16,12 @@ You may download the corresponding HTML file for your preferred OS and language,
 # Available guides
 
 - Windows
+    - Català (ca) [v0.0.1]
     - English (en) [v0.0.1]
     - Español (es) [v0.0.1]
+    - Français (fr) [v0.0.1]
+    - Italiano (it) [v0.0.1]
+
  
 
 # List of procedures and commands
@@ -39,13 +43,6 @@ You may download the corresponding HTML file for your preferred OS and language,
 - Reformat to ``PEP8``
 
 
-# Disclaimer
-
-- I'm dedicated to regularly updating and enhancing this list. If you're interested in contributing, I would be delighted to have your support!
-- Please use these procedures cautiously. While I try to keep them up to date, changes in technology can sometimes outpace my updates.
-- I cannot be held accountable for any issues or inconveniences that might arise from following these instructions.
-
-
 # Credits
 
 Finally, I kindly ask that if you find this list useful, consider citing or reference it as:
@@ -61,3 +58,24 @@ Finally, I kindly ask that if you find this list useful, consider citing or refe
         }
 
 If you cannot make a reference otr citation, please consider contributing. Everything helps!
+
+
+# Versioning
+Versions have three values: vA.B.C, representing Major (A), Significant (B), and Minor (C) changes.
+
+- Minor: corrections in grammar.
+- Significant: small modifications in steps and instructions.
+- Major: adding or removing entire procedures.
+
+Each subset of instructions (each language for each OS) may have an independent Minor version value. These modifications may be exclusive to each language and do not necessarily affect others. Thus, the same minor indices may not reflect the same changes or improvements between languages.
+
+Every Significant and Major change must eventually be translated into each language. The same significant indices indicate the same changes and improvements across languages, but not necessarily across OS.
+
+Major changes are global and mean the same across all OSs and languages.
+
+
+# Disclaimer
+
+- I'm dedicated to regularly updating and enhancing this list. If you're interested in contributing, I would be delighted to have your support!
+- Please use these procedures cautiously. While I try to keep them up to date, changes in technology can sometimes outpace my updates.
+- I cannot be held accountable for any issues or inconveniences that might arise from following these instructions.

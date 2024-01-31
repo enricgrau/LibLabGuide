@@ -11,13 +11,17 @@ Welcome to LibLabGuide's documentation!
    :caption: Introdution:
 
    introduction
-   
+   contribution
+
 .. toctree:: 
    :maxdepth: 2
    :caption: Windows:
 
+   win-ca
    win-en
    win-es
+   win-fr
+   win-it
    
 
 Indices and tables
