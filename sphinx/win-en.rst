@@ -4,6 +4,7 @@ English v0.0.1
 
 Create and activate a virtual environment
 -----------------------------------------
+
 * Create a working folder and change directory with ``cd /path/my_folder``
 * With **pip**:
     * ``python -m venv <my_venv>``
@@ -12,8 +13,10 @@ Create and activate a virtual environment
     * ``conda create --name <my_venv>``
     * ``activate ./<my_env>``
 
+
 Clone with GIT
 --------------
+
 * Create a working folder **<my_library>**
 * Open **cmd** and change to the created folder with ``cd /path/<my_library>``
 * ``git clone https://github.com/user/repository_name.git``
@@ -21,6 +24,7 @@ Clone with GIT
 
 Locally install a library
 -------------------------
+
 * Download the desired library into a folder **/path/<my_library>**
 * On **cmd** and change to the folder with ``cd /path/<my_library>``
 * For **pip**:
@@ -47,26 +51,27 @@ Publish to conda-forge
 
 Update conda-forge
 ------------------
-* First, the library needs to be published in **pypi**
+
+* First, the library needs to be published in **PyPi**
 * On Anaconda Prompt, change directory to library folder with ``cd /path/<my_library>``
 * ``conda install conda-build`` (if not installed)
 * ``conda activate <venv>`` (if needed)
 * ``conda skeleton pypi <my_library>`` <different directory> 
-* If conda skeleton doesn’t work, use ``grayskull pypi <my_library>`` (retrieves from pipy too), cd to a different folder first
+* If conda skeleton doesn’t work, use ``grayskull pypi <my_library>`` (retrieves from **PyPi** too), cd to a different folder first
 * Fork the **<my_library>-feedstock** to your PC/profile (if not forked)
 * Update the personal repo or do a **git pull**. Normally if you try to **push** first you’ll get an error 
 * Change the **sha256** and **version** on the **meta.yaml** file on **recipe** folder with the one created (downloaded). This should be within the first 10 lines.
 * Change the **version** to the new one, and reset **build number** to **0**
 * DON’T CHANGE THE HOST, only requirements under **run:** if any changes
-* If done from local folder, update the github repository with **git**, must be successful with no errors (follow “Update Github”)
-* Pull request the update: Title: Update spectrapepper-feedstock to vX.X.X
+* If done from local folder, update the GitHub repository with **git**, must be successful with no errors (follow “Update GitHub”)
+* Pull request the update: **Title: Update <my_library>-feedstock to vX.X.X**
 * Remember to comment on the pull request for rerender as ``@conda-forge-admin, please rerender``
 * Once all tests are ok, click **Merge pull request**
 * Wait some time for the update
 
 
-Pip Update
-----------
+Update library with Pip
+-----------------------
 
 * ``pip install --upgrade <my_library>``
 
@@ -97,7 +102,7 @@ Upload to PyPi
 * ``cd /path/<my_library>``
 * ``pip install –r requirements_dev.txt`` (only first time or if changed)
 * ``python setup.py sdist``
-* Go to Github > Releases > New Releases  and add a **tag** and **Release title** as **vx.x.x**, some description, and publish release (don’t upload the zip).
+* Go to GitHub > Releases > New Releases  and add a **tag** and **Release title** as **vx.x.x**, some description, and publish release (don’t upload the zip).
 * ``twine upload .\dist\<package-x.x.x.tar.gz>``
 * ``twine upload -u <username> -p <password> - repository-url https://pypi.org/manage/project/<my_library>/dist/<my_library>-x.x.x.tar.gz``
 * Enter **PyPi** user and pass
@@ -130,7 +135,7 @@ Sphinx docs
 * Create a directory called **/path/<my_library>/docs**
 * Copy files under **/path/<my_library>/sphinx/_build/html** to the **/path/<my_library>/docs** directory, replace all but don’t delete any files. 
 * Update the repository with **git** 
-* In **GitHub** got to  **Settings > Pages** and Under **Branch** select the **docs** folder where the **html** where pushed to.
+* In GitHub got to  **Settings > Pages** and Under **Branch** select the **docs** folder where the **html** where pushed to.
 * If the html files do not render well, add and empty **.nojekkyll** file in the **docs** folder.
 
 
@@ -159,7 +164,7 @@ Coverage
 Count lines with cloc
 ---------------------
 
-* Download **cloc** from its Github repository
+* Download **cloc** from its GitHub repository
 * On **cmd**, cd to the location of the **cloc** executable
 * To count lines, write the name of the .exe and then the location/name of the dir/file
 * Example: ``cloc-1.96.1.exe <my_file>.py``

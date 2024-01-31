@@ -19,6 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Español v0.0.1" href="win-es.html" />
     <link rel="prev" title="Library Laboratory Guide" href="introduction.html" /> 
 </head>
 
@@ -53,7 +54,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#locally-install-a-library">Locally install a library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#publish-to-conda-forge">Publish to conda-forge</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#update-conda-forge">Update conda-forge</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#pip-update">Pip Update</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#update-library-with-pip">Update library with Pip</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reformat-to-pep8">Reformat to PEP8</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#update-github-repository">Update GitHub Repository</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#upload-to-pypi">Upload to PyPi</a></li>
@@ -64,6 +65,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#count-lines-with-cloc">Count lines with cloc</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="win-es.html">Español v0.0.1</a></li>
 </ul>
 
         </div>
@@ -82,7 +84,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">English v0.0.1</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/en.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/win-en.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -166,26 +168,26 @@
 <section id="update-conda-forge">
 <h2>Update conda-forge<a class="headerlink" href="#update-conda-forge" title="Permalink to this heading"></a></h2>
 <ul class="simple">
-<li><p>First, the library needs to be published in <strong>pypi</strong></p></li>
+<li><p>First, the library needs to be published in <strong>PyPi</strong></p></li>
 <li><p>On Anaconda Prompt, change directory to library folder with <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/&lt;my_library&gt;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">conda-build</span></code> (if not installed)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">&lt;venv&gt;</span></code> (if needed)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">skeleton</span> <span class="pre">pypi</span> <span class="pre">&lt;my_library&gt;</span></code> &lt;different directory&gt;</p></li>
-<li><p>If conda skeleton doesn’t work, use <code class="docutils literal notranslate"><span class="pre">grayskull</span> <span class="pre">pypi</span> <span class="pre">&lt;my_library&gt;</span></code> (retrieves from pipy too), cd to a different folder first</p></li>
+<li><p>If conda skeleton doesn’t work, use <code class="docutils literal notranslate"><span class="pre">grayskull</span> <span class="pre">pypi</span> <span class="pre">&lt;my_library&gt;</span></code> (retrieves from <strong>PyPi</strong> too), cd to a different folder first</p></li>
 <li><p>Fork the <strong>&lt;my_library&gt;-feedstock</strong> to your PC/profile (if not forked)</p></li>
 <li><p>Update the personal repo or do a <strong>git pull</strong>. Normally if you try to <strong>push</strong> first you’ll get an error</p></li>
 <li><p>Change the <strong>sha256</strong> and <strong>version</strong> on the <strong>meta.yaml</strong> file on <strong>recipe</strong> folder with the one created (downloaded). This should be within the first 10 lines.</p></li>
 <li><p>Change the <strong>version</strong> to the new one, and reset <strong>build number</strong> to <strong>0</strong></p></li>
 <li><p>DON’T CHANGE THE HOST, only requirements under <strong>run:</strong> if any changes</p></li>
-<li><p>If done from local folder, update the github repository with <strong>git</strong>, must be successful with no errors (follow “Update Github”)</p></li>
-<li><p>Pull request the update: Title: Update spectrapepper-feedstock to vX.X.X</p></li>
+<li><p>If done from local folder, update the GitHub repository with <strong>git</strong>, must be successful with no errors (follow “Update GitHub”)</p></li>
+<li><p>Pull request the update: <strong>Title: Update &lt;my_library&gt;-feedstock to vX.X.X</strong></p></li>
 <li><p>Remember to comment on the pull request for rerender as <code class="docutils literal notranslate"><span class="pre">&#64;conda-forge-admin,</span> <span class="pre">please</span> <span class="pre">rerender</span></code></p></li>
 <li><p>Once all tests are ok, click <strong>Merge pull request</strong></p></li>
 <li><p>Wait some time for the update</p></li>
 </ul>
 </section>
-<section id="pip-update">
-<h2>Pip Update<a class="headerlink" href="#pip-update" title="Permalink to this heading"></a></h2>
+<section id="update-library-with-pip">
+<h2>Update library with Pip<a class="headerlink" href="#update-library-with-pip" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">&lt;my_library&gt;</span></code></p></li>
 </ul>
@@ -216,7 +218,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/&lt;my_library&gt;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">–r</span> <span class="pre">requirements_dev.txt</span></code> (only first time or if changed)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">sdist</span></code></p></li>
-<li><p>Go to Github &gt; Releases &gt; New Releases  and add a <strong>tag</strong> and <strong>Release title</strong> as <strong>vx.x.x</strong>, some description, and publish release (don’t upload the zip).</p></li>
+<li><p>Go to GitHub &gt; Releases &gt; New Releases  and add a <strong>tag</strong> and <strong>Release title</strong> as <strong>vx.x.x</strong>, some description, and publish release (don’t upload the zip).</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">twine</span> <span class="pre">upload</span> <span class="pre">.\dist\&lt;package-x.x.x.tar.gz&gt;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">twine</span> <span class="pre">upload</span> <span class="pre">-u</span> <span class="pre">&lt;username&gt;</span> <span class="pre">-p</span> <span class="pre">&lt;password&gt;</span> <span class="pre">-</span> <span class="pre">repository-url</span> <span class="pre">https://pypi.org/manage/project/&lt;my_library&gt;/dist/&lt;my_library&gt;-x.x.x.tar.gz</span></code></p></li>
 <li><p>Enter <strong>PyPi</strong> user and pass</p></li>
@@ -249,7 +251,7 @@
 <li><p>Create a directory called <strong>/path/&lt;my_library&gt;/docs</strong></p></li>
 <li><p>Copy files under <strong>/path/&lt;my_library&gt;/sphinx/_build/html</strong> to the <strong>/path/&lt;my_library&gt;/docs</strong> directory, replace all but don’t delete any files.</p></li>
 <li><p>Update the repository with <strong>git</strong></p></li>
-<li><p>In <strong>GitHub</strong> got to  <strong>Settings &gt; Pages</strong> and Under <strong>Branch</strong> select the <strong>docs</strong> folder where the <strong>html</strong> where pushed to.</p></li>
+<li><p>In GitHub got to  <strong>Settings &gt; Pages</strong> and Under <strong>Branch</strong> select the <strong>docs</strong> folder where the <strong>html</strong> where pushed to.</p></li>
 <li><p>If the html files do not render well, add and empty <strong>.nojekkyll</strong> file in the <strong>docs</strong> folder.</p></li>
 </ul>
 </section>
@@ -278,7 +280,7 @@
 <section id="count-lines-with-cloc">
 <h2>Count lines with cloc<a class="headerlink" href="#count-lines-with-cloc" title="Permalink to this heading"></a></h2>
 <ul class="simple">
-<li><p>Download <strong>cloc</strong> from its Github repository</p></li>
+<li><p>Download <strong>cloc</strong> from its GitHub repository</p></li>
 <li><p>On <strong>cmd</strong>, cd to the location of the <strong>cloc</strong> executable</p></li>
 <li><p>To count lines, write the name of the .exe and then the location/name of the dir/file</p></li>
 <li><p>Example: <code class="docutils literal notranslate"><span class="pre">cloc-1.96.1.exe</span> <span class="pre">&lt;my_file&gt;.py</span></code></p></li>
@@ -291,6 +293,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="introduction.html" class="btn btn-neutral float-left" title="Library Laboratory Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="win-es.html" class="btn btn-neutral float-right" title="Español v0.0.1" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

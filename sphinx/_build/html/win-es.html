@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Español v0.0.1 &mdash; LibLabGuide 0.0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="English v0.0.1" href="win-en.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            LibLabGuide
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introdution:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Library Laboratory Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Windows:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="win-en.html">English v0.0.1</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Español v0.0.1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#crear-y-activar-un-entorno-virtual">Crear y activar un entorno virtual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clonar-con-git">Clonar con GIT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instalacion-local-de-una-libreria">Instalación local de una librería</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#publicar-en-conda-forge">Publicar en conda-forge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#actualizar-conda-forge">Actualizar conda-forge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#actualizar-libreria-con-pip">Actualizar librería con Pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reformatear-a-pep8">Reformatear a PEP8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#actualizar-repositorio-en-github">Actualizar Repositorio en GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#subir-a-pypi">Subir a PyPi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#actualizar-version">Actualizar versión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentacion-con-sphinx">Documentación con Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ignorar-archivos-ya-comprometidos">Ignorar archivos ya comprometidos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cobertura">Cobertura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contar-lineas-con-cloc">Contar líneas con cloc</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LibLabGuide</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Español v0.0.1</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/win-es.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="espanol-v0-0-1">
+<h1>Español v0.0.1<a class="headerlink" href="#espanol-v0-0-1" title="Permalink to this heading"></a></h1>
+<section id="crear-y-activar-un-entorno-virtual">
+<h2>Crear y activar un entorno virtual<a class="headerlink" href="#crear-y-activar-un-entorno-virtual" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Crear una carpeta de trabajo y cambiar de directorio con <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/my_folder</span></code></p></li>
+<li><dl class="simple">
+<dt>Con <strong>pip</strong>:</dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">venv</span> <span class="pre">&lt;my_venv&gt;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;my_venv&gt;\Scripts\activate</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Con <strong>conda</strong>:</dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">--name</span> <span class="pre">&lt;my_venv&gt;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">activate</span> <span class="pre">./&lt;my_env&gt;</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="clonar-con-git">
+<h2>Clonar con GIT<a class="headerlink" href="#clonar-con-git" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Crear una carpeta de trabajo <strong>&lt;my_library&gt;</strong></p></li>
+<li><p>Abrir <strong>cmd</strong> y cambiar al directorio creado con <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/&lt;my_library&gt;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/user/repository_name.git</span></code></p></li>
+</ul>
+</section>
+<section id="instalacion-local-de-una-libreria">
+<h2>Instalación local de una librería<a class="headerlink" href="#instalacion-local-de-una-libreria" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Descargar la librería deseada en una carpeta <strong>/path/&lt;my_library&gt;</strong></p></li>
+<li><p>En <strong>cmd</strong> cambiar al directorio con <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/&lt;my_library&gt;</span></code></p></li>
+<li><dl class="simple">
+<dt>Para <strong>pip</strong>:</dt><dd><ul>
+<li><p>Primero desinstalar si ya está instalada con <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">uninstall</span> <span class="pre">&lt;my_library&gt;</span></code></p></li>
+<li><p>Instalar con <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Para <strong>conda</strong>:</dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">&lt;my_library&gt;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">/path/library-filename.tar.bz2</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="publicar-en-conda-forge">
+<h2>Publicar en conda-forge<a class="headerlink" href="#publicar-en-conda-forge" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Primero clonar el <strong>feedstock</strong> de <strong>conda-forge</strong> en GitHub</p></li>
+<li><p>Clonarlo en tu PC con <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/user/repository_name.git</span></code></p></li>
+<li><dl class="simple">
+<dt>En Anaconda Prompt:</dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">demo</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">skeleton</span> <span class="pre">pypi</span> <span class="pre">&lt;my_library&gt;</span></code> (primero descargar esto en cualquier directorio)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">conda-build</span></code> (solo si no está instalado)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Modificar el archivo <strong>meta</strong> según corresponda en la carpeta <strong>recipies</strong> en <strong>stage-recipe</strong></p></li>
+<li><p>Subir a GitHub, seguir “Actualizar Repositorio en GitHub”</p></li>
+</ul>
+</section>
+<section id="actualizar-conda-forge">
+<h2>Actualizar conda-forge<a class="headerlink" href="#actualizar-conda-forge" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Primero, la librería necesita ser publicada en <strong>PyPi</strong></p></li>
+<li><p>En Anaconda Prompt, cambiar de directorio a la carpeta de la librería con <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/&lt;my_library&gt;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">conda-build</span></code> (si no está instalado)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">&lt;venv&gt;</span></code> (si es necesario)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">skeleton</span> <span class="pre">pypi</span> <span class="pre">&lt;my_library&gt;</span></code> &lt;diferente directorio&gt;</p></li>
+<li><p>Si conda skeleton no funciona, usar <code class="docutils literal notranslate"><span class="pre">grayskull</span> <span class="pre">pypi</span> <span class="pre">&lt;my_library&gt;</span></code> (también extrae de <strong>PyPi</strong>), primero cambiar a un directorio diferente</p></li>
+<li><p>Hacer un fork del <strong>&lt;my_library&gt;-feedstock</strong> a tu PC/perfil (si no está hecho)</p></li>
+<li><p>Actualizar el repositorio personal o hacer un <strong>git pull</strong>. Normalmente si intentas hacer <strong>push</strong> primero, obtendrás un error</p></li>
+<li><p>Cambiar el <strong>sha256</strong> y la <strong>versión</strong> en el archivo <strong>meta.yaml</strong> de la carpeta <strong>recipe</strong> con el creado (descargado). Esto debería estar dentro de las primeras 10 líneas.</p></li>
+<li><p>Cambiar la <strong>versión</strong> a la nueva y restablecer el <strong>número de build</strong> a <strong>0</strong></p></li>
+<li><p>NO CAMBIAR EL HOST, solo los requisitos bajo <strong>run:</strong> si hay cambios</p></li>
+<li><p>Si se hace desde la carpeta local, actualizar el repositorio de GitHub con <strong>git</strong>, debe ser exitoso sin errores (seguir “Actualizar GitHub”)</p></li>
+<li><p>Hacer una solicitud de pull para la actualización: <strong>Título: Actualizar &lt;my_library&gt;-feedstock a vX.X.X</strong></p></li>
+<li><p>Recordar comentar en la solicitud de pull para rehacer como <code class="docutils literal notranslate"><span class="pre">&#64;conda-forge-admin,</span> <span class="pre">please</span> <span class="pre">rerender</span></code></p></li>
+<li><p>Una vez que todas las pruebas estén bien, hacer clic en <strong>Merge pull request</strong></p></li>
+<li><p>Esperar un tiempo para la actualización</p></li>
+</ul>
+</section>
+<section id="actualizar-libreria-con-pip">
+<h2>Actualizar librería con Pip<a class="headerlink" href="#actualizar-libreria-con-pip" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">&lt;my_library&gt;</span></code></p></li>
+</ul>
+</section>
+<section id="reformatear-a-pep8">
+<h2>Reformatear a PEP8<a class="headerlink" href="#reformatear-a-pep8" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">autopep8</span> <span class="pre">--in-place</span> <span class="pre">--aggressive</span> <span class="pre">--aggressive</span> <span class="pre">&lt;filename&gt;.py</span></code></p></li>
+</ul>
+</section>
+<section id="actualizar-repositorio-en-github">
+<h2>Actualizar Repositorio en GitHub<a class="headerlink" href="#actualizar-repositorio-en-github" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Hacer clic derecho en la carpeta &gt; Git Bash Here</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">main</span></code> (o master)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">*</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">“nota</span> <span class="pre">de</span> <span class="pre">actualización”</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">main</span></code> (o master)</p></li>
+</ul>
+</section>
+<section id="subir-a-pypi">
+<h2>Subir a PyPi<a class="headerlink" href="#subir-a-pypi" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>En <strong>cmd</strong> como Administrador</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/&lt;my_library&gt;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">–r</span> <span class="pre">requirements_dev.txt</span></code> (solo la primera vez o si cambia)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">sdist</span></code></p></li>
+<li><p>Ir a GitHub &gt; Releases &gt; New Releases y añadir un <strong>tag</strong> y <strong>Release title</strong> como <strong>vx.x.x</strong>, alguna descripción, y publicar release (no subir el zip).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">twine</span> <span class="pre">upload</span> <span class="pre">.\dist\&lt;package-x.x.x.tar.gz&gt;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">twine</span> <span class="pre">upload</span> <span class="pre">-u</span> <span class="pre">&lt;username&gt;</span> <span class="pre">-p</span> <span class="pre">&lt;password&gt;</span> <span class="pre">-</span> <span class="pre">repository-url</span> <span class="pre">https://pypi.org/manage/project/&lt;my_library&gt;/dist/&lt;my_library&gt;-x.x.x.tar.gz</span></code></p></li>
+<li><p>Ingresar usuario y contraseña de <strong>PyPi</strong></p></li>
+</ul>
+</section>
+<section id="actualizar-version">
+<h2>Actualizar versión<a class="headerlink" href="#actualizar-version" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>En <strong>cmd</strong> como Administrador</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/&lt;my_library&gt;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bumpversion</span> <span class="pre">patch/minor/mayor</span></code> (seleccionar uno)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">*</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">“nota</span> <span class="pre">de</span> <span class="pre">commit”</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">main</span></code> (o master)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">--tags</span></code></p></li>
+<li><p>Si esto no funciona, puedes cambiar la versión manualmente en los archivos <strong>setup.py</strong>, <strong>setup.cfg</strong>, y <strong>__init__.py</strong>.</p></li>
+</ul>
+</section>
+<section id="documentacion-con-sphinx">
+<h2>Documentación con Sphinx<a class="headerlink" href="#documentacion-con-sphinx" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>En <strong>cmd</strong> como Administrador</p></li>
+<li><p>Instalar <strong>Sphinx</strong> con <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx</span></code></p></li>
+<li><p>Crear una carpeta llamada <strong>sphinx</strong></p></li>
+<li><p>Cambiar directorio de trabajo a la carpeta <strong>sphinx</strong> con <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/&lt;my_library&gt;/sphinx</span></code></p></li>
+<li><p>Descargar la plantilla con el comando <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code> y seguir las instrucciones de instalación. Configúralo según necesites, si tienes dudas, ve con las opciones predeterminadas.</p></li>
+<li><p>Cambiar y añadir archivos <strong>.rst</strong> según necesites</p></li>
+<li><p>Antes de crear los archivos HTML, siempre hacer <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clean</span></code></p></li>
+<li><p>Crear los nuevos archivos HTML con <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code></p></li>
+<li><p>Crear un directorio llamado <strong>/path/&lt;my_library&gt;/docs</strong></p></li>
+<li><p>Copiar los archivos bajo <strong>/path/&lt;my_library&gt;/sphinx/_build/html</strong> al directorio <strong>/path/&lt;my_library&gt;/docs</strong>, reemplazar todo pero no eliminar ningún archivo.</p></li>
+<li><p>Actualizar el repositorio con <strong>git</strong></p></li>
+<li><p>En GitHub ir a <strong>Settings &gt; Pages</strong> y bajo <strong>Branch</strong> seleccionar la carpeta <strong>docs</strong> donde se empujaron los archivos <strong>html</strong>.</p></li>
+<li><p>Si los archivos html no se visualizan bien, añadir un archivo vacío <strong>.nojekkyll</strong> en la carpeta <strong>docs</strong>.</p></li>
+</ul>
+</section>
+<section id="ignorar-archivos-ya-comprometidos">
+<h2>Ignorar archivos ya comprometidos<a class="headerlink" href="#ignorar-archivos-ya-comprometidos" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Actualizar <strong>.gitignore</strong> si es necesario</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rm</span> <span class="pre">-r</span> <span class="pre">--cached</span> <span class="pre">.</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">–m</span> <span class="pre">“comentario</span> <span class="pre">de</span> <span class="pre">commit”</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">main</span></code></p></li>
+</ul>
+</section>
+<section id="cobertura">
+<h2>Cobertura<a class="headerlink" href="#cobertura" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Instalar <strong>coverage</strong> si no está instalado con <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">coverage</span></code></p></li>
+<li><p>Cambiar de directorio a la carpeta de pruebas de la librería con <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/path/&lt;my_library&gt;/tests</span></code></p></li>
+<li><p>Ejecutar el archivo de prueba con <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">–m</span> <span class="pre">unittest</span> <span class="pre">test_package.py</span></code></p></li>
+<li><p>Ejecutar pruebas con <strong>coverage</strong> con <code class="docutils literal notranslate"><span class="pre">coverage</span> <span class="pre">run</span> <span class="pre">–m</span> <span class="pre">unittest</span> <span class="pre">&lt;test_package&gt;.py</span></code></p></li>
+<li><p>Generar reporte de cobertura con <code class="docutils literal notranslate"><span class="pre">coverage</span> <span class="pre">report</span></code>. Para leer incluir <code class="docutils literal notranslate"><span class="pre">-m</span></code> al final. Si hay error, usar <code class="docutils literal notranslate"><span class="pre">-i</span></code> al final</p></li>
+<li><p>Generar el archivo <strong>xml</strong> con <code class="docutils literal notranslate"><span class="pre">coverage</span> <span class="pre">xml</span></code></p></li>
+<li><p>Si el comando <code class="docutils literal notranslate"><span class="pre">coverage</span></code> no funciona, entonces usar <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">coverage</span> <span class="pre">&lt;test_package&gt;.py</span></code></p></li>
+</ul>
+</section>
+<section id="contar-lineas-con-cloc">
+<h2>Contar líneas con cloc<a class="headerlink" href="#contar-lineas-con-cloc" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Descargar <strong>cloc</strong> de su repositorio en GitHub</p></li>
+<li><p>En <strong>cmd</strong>, cambiar al directorio donde está el ejecutable de <strong>cloc</strong></p></li>
+<li><p>Para contar líneas, escribir el nombre del .exe y luego la ubicación/nombre del directorio/archivo</p></li>
+<li><p>Ejemplo: <code class="docutils literal notranslate"><span class="pre">cloc-1.96.1.exe</span> <span class="pre">&lt;my_file&gt;.py</span></code></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="win-en.html" class="btn btn-neutral float-left" title="English v0.0.1" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Enric Grau-Luque.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

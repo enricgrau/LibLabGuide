@@ -16,7 +16,8 @@ Welcome to LibLabGuide's documentation!
    :maxdepth: 2
    :caption: Windows:
 
-   en
+   win-en
+   win-es
    
 
 Indices and tables

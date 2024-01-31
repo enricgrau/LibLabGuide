@@ -1,7 +1,8 @@
 # Library Laboratory Guide
 
-Over the years, while developing Python libraries with Git and GitHub, I've often needed to carry out various procedures. Some of these tasks are rare, perhaps done only once in the lifetime of a library, like publishing to PyPI or Conda-forge. Because of this, remembering these infrequent steps can be challenging. To address this, I've been gathering all these procedures, compiling them into one central document for quick reference. I've found this collection immensely helpful, and it struck me that it might be beneficial to others as well. So, I'm sharing it here for anyone who might find it useful.
+Over the years, while developing Python libraries with Git and GitHub, I've often needed to carry out various procedures. Some of these tasks are rare, perhaps done only once in the lifetime of a library, like publishing to PyPI or Conda-forge. Because of this, remembering these infrequent steps can be challenging. To address this, I've been gathering all these procedures and compiling them into one central document for quick reference. I've found this collection immensely helpful, and it struck me that it might be beneficial to others as well. So, I'm sharing it here for anyone who might find it useful. And es, this si essentially a cheat sheet.
 
+Access the documentation here: https://enricgrau.github.io/LibLabGuide/
 
 # How to use
 
@@ -9,15 +10,19 @@ The guide is organized by Operating System (OS) and language. Each OS has its ow
 
 All instructions and procedures are compiled into one comprehensive file, without being split into further categories. They are arranged sequentially, so if you're starting a library from scratch, you can follow the steps in order from beginning to end (or close to it).
 
+You may download the corresponding HTML file for your preferred OS and language, and open it locally, though some aesthetics may be lost.
+
 
 # Available guides
 
 - Windows
     - English (en) [v0.0.1]
+    - Español (es) [v0.0.1]
  
 
 # List of procedures and commands
 
+- Crerate and activate virtual environment
 - Update libraries with `pip`
 - Clone repository with `git`
 - Update GitHub repositiry
